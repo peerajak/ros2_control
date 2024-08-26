@@ -1,0 +1,15 @@
+Terminal 1.
+source /home/simulations/ros2_sims_ws/install/setup.bash
+ros2 launch unit6_simulation simulation_launch.py
+
+Terminal 2.
+cd ~/ros2_ws
+colcon build; source install/setup.bash
+source ~/ros2_ws/install/setup.bash
+ros2 launch ros2control_unit_6_final_project_bringup final_project.launch.py
+
+Terminal 3.
+cd ~/ros2_ws
+source install/setup.bash
+ros2 launch joint_trajectory_publisher joint_trajectory_solo_push-ups.launch.py
+
